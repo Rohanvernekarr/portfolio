@@ -13,11 +13,20 @@
     --foreground: #ededed;
   }
 }
+@media (min-width: 640px) {
+  .scrollbar-hide {
+    overflow-x: hidden; /* Disable horizontal scrolling on large screens */
+  }
+}
 
 body {
   color: var(--foreground);
   background: var(--background);
+  
  
+}
+html {
+  scroll-behavior: smooth;
 }
 
 

@@ -129,13 +129,7 @@ const Navbar = () => {
             >
               Resume
             </Link>
-            <Link
-              href="#about"
-              className="block py-2 px-3 text-gray-200 font-mono hover:text-blue-400 hover:bg-zinc-700/50 rounded-md transition-all duration-300"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About
-            </Link>
+           
           </div>
         </motion.div>
       )}

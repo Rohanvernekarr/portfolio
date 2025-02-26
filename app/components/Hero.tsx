@@ -43,7 +43,7 @@ const Hero = () => {
                 src="/rohan.png"
                 alt="Profile photo"
                 fill
-                className="object-contain z-10 mt-0"
+                className="object-contain z-10 "
               />
             </div>
           </motion.div>

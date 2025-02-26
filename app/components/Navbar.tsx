@@ -123,7 +123,9 @@ const Navbar = () => {
               Projects
             </Link>
             <Link
-              href="#about"
+              href="https://github.com/Rohanvernekarr/Resume/blob/main/rohanvernekar.pdf"
+              target="_blank" 
+              rel="noopener noreferrer" 
               className="block py-2 px-3 text-gray-200 font-mono hover:text-blue-400 hover:bg-zinc-700/50 rounded-md transition-all duration-300"
               onClick={() => setIsMenuOpen(false)}
             >

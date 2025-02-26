@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Twitter, Linkedin, Github, MapPin } from "lucide-react";
+import { Twitter, Linkedin, Github, MapPin, Camera } from "lucide-react";
 import Image from "next/image";
 
 const Hero = () => {
@@ -27,27 +27,41 @@ const Hero = () => {
     >
       <div className="max-w-7xl mx-auto w-full">
        
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="flex flex-col md:flex-row mt-3 items-center justify-between gap-8">
          
           <motion.div
-            className="md:w-1/2 flex justify-center relative mt-8 md:mt-0 order-1 md:order-2"
+            className="md:w-1/2 flex justify-center relative mt-4 md:mt-0 order-1 md:order-2"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           >
-            <div className="relative flex items-center justify-center w-[280px] h-[400px] sm:w-[350px] sm:h-[500px] md:w-[400px] md:h-[550px] lg:w-[650px] lg:h-[600px]">
+           
+            <div className="relative flex flex-col items-center w-[280px] sm:w-[320px] md:w-[350px] lg:w-[450px] ">
+            
+              <div className="relative w-full h-[400px] sm:h-[450px] md:h-[550px] lg:h-[550px] rounded-2xl   overflow-hidden mb-3">
+                <div className="absolute inset-0 bg-zinc-800/40 -z-10 blur-xl"></div>
+                <Image
+                  src="/rohanrv.png"
+                  alt="Profile photo"
+                  fill
+                  sizes="(max-width: 640px) 280px, (max-width: 768px) 320px, (max-width: 1024px) 350px, 450px"
+                  className="object-contain z-10 "
+                  priority
+                />
+              </div>
               
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-zinc-500/20 to-purple-900/20 blur-xl animate-pulse"></div>
-             
-              <Image
-                src="/rohan.png"
-                alt="Profile photo"
-                fill
-                className="object-contain z-10 "
-              />
+              
+              <motion.div 
+                className="flex items-center space-x-2 text-sm text-zinc-400 border-t border-zinc-800  pt-3 w-full justify-center"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.8 }}
+              >
+                <Camera className="h-4 w-4" />
+                <span>IBW Bengaluru 2024</span>
+              </motion.div>
             </div>
           </motion.div>
-
           
           <motion.div
             className="md:w-1/2 order-2 md:order-1"
@@ -56,7 +70,7 @@ const Hero = () => {
             animate="visible"
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h1 className="text-3xl md:text-4xl font-serif lg:text-5xl font-bold text-gray-100 mb-4 bg-gradient-to-r from-gray-100 to-blue-400 bg-clip-text text-transparent">
+            <h1 className="text-3xl md:text-4xl font-serif lg:text-5xl font-bold text-gray-100 bg-gradient-to-r from-gray-100 to-blue-400 bg-clip-text text-transparent mb-4">
               Rohan Ravi Vernekar
             </h1>
             <p className="text-lg md:text-xl font-sans text-gray-300 mb-6 leading-relaxed">
@@ -64,10 +78,9 @@ const Hero = () => {
               functional web applications. Exploring Web3 and Blockchain.
             </p>
             <div className="flex items-center text-lg text-gray-400">
-              <MapPin className="h-8 w-5 mr-2 text-blue-400" />
+              <MapPin className="h-8 w-5 mr-2 text-gray-400" />
               <a
-                href="https://www.google.com/maps/place/Karnataka/@15.0261513,73.6789652,7z/data=!3m1!4b1!4m6!3m5!1s0x3ba35a4c37bf488f:0x41f1d28cd1757c
-           // d5!8m2!3d15.3172775!4d75.7138884!16zL20vMDQ5bHI?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D"
+                href="https://www.google.com/maps/place/Karnataka/@15.0261513,73.6789652,7z/data=!3m1!4b1!4m6!3m5!1s0x3ba35a4c37bf488f:0x41f1d28cd1757cd5!8m2!3d15.3172775!4d75.7138884!16zL20vMDQ5bHI?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -84,7 +97,7 @@ const Hero = () => {
                 href="https://twitter.com/Rohanvrnkr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-blue-400 transform hover:scale-110 transition-all duration-300"
+                className="text-gray-300 hover:text-gray-100 transform hover:scale-110 transition-all duration-300"
                 variants={fadeInUp}
                 whileHover={{ y: -3 }}
               >
@@ -94,7 +107,7 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/rohan-vernekar-b57913283/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-blue-400 transform hover:scale-110 transition-all duration-300"
+                className="text-gray-300 hover:text-gray-100 transform hover:scale-110 transition-all duration-300"
                 variants={fadeInUp}
                 whileHover={{ y: -3 }}
               >
@@ -104,7 +117,7 @@ const Hero = () => {
                 href="https://github.com/Rohanvernekarr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-blue-400 transform hover:scale-110 transition-all duration-300"
+                className="text-gray-300 hover:text-gray-100 transform hover:scale-110 transition-all duration-300"
                 variants={fadeInUp}
                 whileHover={{ y: -3 }}
               >

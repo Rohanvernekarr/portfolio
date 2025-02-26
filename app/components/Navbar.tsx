@@ -101,13 +101,7 @@ const Navbar = () => {
               Resume
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span>
             </Link>
-            <Link
-              href="#about"
-              className="text-gray-200 font-mono hover:text-blue-400 transition-all duration-300 relative group"
-            >
-              About
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span>
-            </Link>
+           
           </div>
         </div>
       </div>

@@ -20,32 +20,49 @@ const Projects = () => {
         "PostgreSQL",
         "Vercel",
       ],
+      
     },
+    
+  ];
+  const projects2 = [
     {
       title: "Fusion Chat",
       description:
-        "Fusion Chat is a real-time messaging web application that enables seamless communication between users.",
-      image: "/Screenshot 2023-12-27 000040.png",
-      link: "#",
+        "Fusion Chat is a real-time messaging web application that enables seamless communication between users. ",
+      image: "/Fusion.png",
+      link: "https://github.com/Rohanvernekarr/FusionChat",
+
       tags: [
         "React",
-        "Node.js",
-        "MongoDB",
         "Express.js",
-        "Socket.io",
+        "Javascript",
         "Tailwind CSS",
+        "Socket.io",
+        "MongoDB",
         "Vercel",
-        "Render",
       ],
+      
     },
+    
+  ];
+  const projects3 = [
     {
-      title: "Fusion VR",
+      title: "FusionVR",
       description:
-        "A brief description of project 3 highlighting the key features and the impact it has on users or businesses.",
-      image: "/Screenshot 2023-12-27 190955.png",
-      link: "#",
-      tags: ["React.js", "Tailwind CSS", "Vite", "JavaScript"],
+        "Landing page.",
+      image: "/fusionvr.png",
+      link: "https://github.com/Rohanvernekarr/FusionVR",
+
+      tags: [
+        "React",
+        "Javascript",
+        "Tailwind CSS",
+        
+        "Vercel",
+      ],
+      
     },
+    
   ];
   return (
     <motion.section
@@ -54,9 +71,9 @@ const Projects = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="py-16 md:py-24"
+      className=" pt-10 px-4 sm:px-6 lg:px-8"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto  ">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -132,6 +149,144 @@ const Projects = () => {
                   </Link>
                   <Link
                     href="https://githive.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-gray-400 hover:text-blue-300 ml-5 font-medium transition-colors duration-300"
+                  >
+                    Live Link
+                    <ExternalLink className="ml-1 h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+          {projects2.map((project2, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ y: -10 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.1,
+                y: {
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 10,
+                },
+              }}
+              className="bg-zinc-800/50 backdrop-blur-sm rounded-xl shadow-xl overflow-hidden border border-zinc-700/50 hover:border-blue-400/30 transition-all duration-300"
+            >
+              <div className="relative overflow-hidden group">
+                <Image
+                  src={project2.image}
+                  alt={project2.title}
+                  width={400}
+                  height={300}
+                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-100 mb-2">
+                  {project2.title}
+                </h3>
+                <p className="text-gray-300 mb-4 text-sm md:text-base">
+                  {project2.description}
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project2.tags.map((tag, tagIndex) => (
+                    <span
+                      key={tagIndex}
+                      className="bg-zinc-700/50 text-blue-300 text-xs px-2 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <div className="gap-4">
+                  <Link
+                    href={project2.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-gray-400 hover:text-blue-300  font-medium transition-colors duration-300"
+                  >
+                    View Project
+                    <ExternalLink className="ml-1 h-4 w-4" />
+                  </Link>
+                  <Link
+                    href="https://fusion-chat-plum.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-gray-400 hover:text-blue-300 ml-5 font-medium transition-colors duration-300"
+                  >
+                    Live Link
+                    <ExternalLink className="ml-1 h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+          {projects3.map((project3, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ y: -10 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.1,
+                y: {
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 10,
+                },
+              }}
+              className="bg-zinc-800/50 backdrop-blur-sm rounded-xl h-96 shadow-xl overflow-hidden border border-zinc-700/50 
+              hover:border-blue-400/30 transition-all duration-300"
+            >
+              <div className="relative overflow-hidden group">
+                <Image
+                  src={project3.image}
+                  alt={project3.title}
+                  width={400}
+                  height={300}
+                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent opacity-0 group-hover:opacity-70 
+                transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-100 mb-2">
+                  {project3.title}
+                </h3>
+                <p className="text-gray-300 mb-4 text-sm md:text-base">
+                  {project3.description}
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project3.tags.map((tag, tagIndex) => (
+                    <span
+                      key={tagIndex}
+                      className="bg-zinc-700/50 text-blue-300 text-xs px-2 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <div className="gap-4">
+                  <Link
+                    href={project3.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-gray-400 hover:text-blue-300  font-medium transition-colors duration-300"
+                  >
+                    View Project
+                    <ExternalLink className="ml-1 h-4 w-4" />
+                  </Link>
+                  <Link
+                    href="https://fusionvr.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-gray-400 hover:text-blue-300 ml-5 font-medium transition-colors duration-300"

@@ -12,6 +12,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite', // 3 seconds per rotation
+        'spin-fast': 'spin 0.5s linear infinite', // 0.5 seconds per rotation
+        'spin-custom': 'spin 2s linear infinite', // 2 seconds per rotation
+      },
     },
   },
   plugins: [],

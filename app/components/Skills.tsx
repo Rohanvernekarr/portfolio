@@ -15,7 +15,7 @@ const skills = [
   { name: "Express.js", icon: <SiExpress className="text-white" /> },
   { name: "Postgresql", icon: <SiPostgresql className="text-blue-400" /> },
   { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
-  { name: "Kali Linux", icon: <SiKalilinux className="text-blue-600" /> },
+  { name: "Kali Linux", icon: <SiKalilinux className="text-blue-300" /> },
   { name: "AWS", icon: <FaAws className="text-orange-400" /> },
   { name: "JSON", icon: <SiJson className="text-gray-300" /> },
   { name: "Cloudinary", icon: <SiCloudinary className="text-blue-300" /> },
@@ -30,15 +30,15 @@ const Skills = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeIn" }}
-      className="min-h-96 flex flex-col items-center justify-center pt-10 px-4 sm:px-6 lg:px-8"
+      className="   pt-10 px-4 sm:px-6 lg:px-8"
     >
-      <div className="max-w-7xl mx-auto w-full py-20 relative rounded-full border-collapse">
+      <div className="max-w-7xl mx-auto w-full py-20  rounded-full border-collapse">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-2xl md:text-3xl font-serif text-center font-bold mb-2 text-gray-200"
+          className="text-2xl md:text-3xl font-serif font-bold text-gray-100 mb-2"
         >
           Skills
         </motion.h2>
@@ -47,15 +47,15 @@ const Skills = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="h-1 w-20 bg-blue-400 mb-8 mx-auto"
+          className="h-1 w-20 bg-blue-400 mb-8 "
         />
         
         <div className="overflow-x-scroll w-full py-6 relative scrollbar-hide">
           <motion.div
             className="flex gap-3 relative"
-            animate={{ x: ["-100%", 0] }}
+            animate={{ x: [ 0,"-126.3%"] }}
             transition={{
-              duration: 30,
+              duration: 20,
               ease: "linear",
               repeat: Infinity,
               repeatType: "loop",

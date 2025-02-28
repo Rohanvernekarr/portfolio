@@ -39,9 +39,9 @@ const Hero = () => {
             <div className="relative flex flex-col items-center w-[280px] sm:w-[320px] md:w-[350px] lg:w-[450px] ">
             
               <div className="relative w-full h-[400px] sm:h-[450px] md:h-[550px] lg:h-[550px] rounded-2xl   overflow-hidden mb-3">
-                <div className="absolute inset-0 bg-zinc-800/40 -z-10 blur-xl"></div>
+                <div className="absolute inset-0 bg-zinc-800/40 -z-10 blur-xl "></div>
                 <Image
-                  src="/rohanrv.png"
+                  src="/rohan.jpg"
                   alt="Profile photo"
                   fill
                   sizes="(max-width: 640px) 280px, (max-width: 768px) 320px, (max-width: 1024px) 350px, 450px"
@@ -58,7 +58,7 @@ const Hero = () => {
                 transition={{ delay: 0.8 }}
               >
                 <Camera className="h-4 w-4" />
-                <span>IBW Bengaluru 2024</span>
+                <span>Bengaluru </span>
               </motion.div>
             </div>
           </motion.div>

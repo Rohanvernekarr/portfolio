@@ -77,7 +77,7 @@ const Hero = () => {
               Full-stack developer passionate about creating beautiful and
               functional web applications. Exploring Web3 and Blockchain.
             </p>
-            <div className="flex items-center text-lg text-gray-400">
+            <div className="flex items-center text-lg text-gray-400 hover:text-gray-300  w-44">
               <MapPin className="h-8 w-5 mr-2 text-gray-400" />
               <a
                 href="https://www.google.com/maps/place/Karnataka/@15.0261513,73.6789652,7z/data=!3m1!4b1!4m6!3m5!1s0x3ba35a4c37bf488f:0x41f1d28cd1757cd5!8m2!3d15.3172775!4d75.7138884!16zL20vMDQ5bHI?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D"
@@ -97,7 +97,7 @@ const Hero = () => {
                 href="https://twitter.com/Rohanvrnkr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-gray-100 transform hover:scale-110 transition-all duration-300"
+                className="text-gray-300 hover:text-gray-100 transform hover:scale-110 transition-all duration-100"
                 variants={fadeInUp}
                 whileHover={{ y: -3 }}
               >
@@ -107,7 +107,7 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/rohan-vernekar-b57913283/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-gray-100 transform hover:scale-110 transition-all duration-300"
+                className="text-gray-300 hover:text-gray-100 transform hover:scale-110 transition-all duration-100"
                 variants={fadeInUp}
                 whileHover={{ y: -3 }}
               >
@@ -117,7 +117,7 @@ const Hero = () => {
                 href="https://github.com/Rohanvernekarr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-gray-100 transform hover:scale-110 transition-all duration-300"
+                className="text-gray-300 hover:text-gray-100 transform hover:scale-110 transition-all duration-100"
                 variants={fadeInUp}
                 whileHover={{ y: -3 }}
               >

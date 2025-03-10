@@ -20,12 +20,12 @@ const Footer = () => {
             <div className="flex items-center text-gray-400">
               <MapPin className="h-4 w-4 mr-2 text-blue-400" />
               <a
-                href="https://www.google.com/maps/place/Karnataka/@15.0261513,73.6789652,7z/data=!3m1!4b1!4m6!3m5!1s0x3ba35a4c37bf488f:0x41f1d28cd1757c
-           // d5!8m2!3d15.3172775!4d75.7138884!16zL20vMDQ5bHI?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D"
+                href="https://www.google.com/maps/place/Bengaluru,+Karnataka/@12.9542802,77.4661271,11z/data=!3m1!4b1!4m6!3m5!1s0x3bae1670c9b44e6d
+                0xf8dfc3e8517e4fe0!8m2!3d12.9715987!4d77.5945627!16zL20vMDljMTc?entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Karnataka, India
+                Bengaluru, India
               </a>
             </div>
             <p className="text-gray-400">
@@ -53,7 +53,16 @@ const Footer = () => {
                   Projects
                 </Link>
               </li>
-             
+              <li>
+                <Link
+                  href="https://github.com/Rohanvernekarr/Resume/blob/main/rohanvernekar.pdfs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+                >
+                  Resume
+                </Link>
+              </li>
              
             </ul>
           </div>
@@ -90,7 +99,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
               >
-                Rohan Vernekar
+                RohanVernekar
               </a>
             </p>
             <p className="text-gray-400">Feel free to reach out.</p>

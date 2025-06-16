@@ -124,6 +124,35 @@ const Hero = () => {
                 <Github className="h-6 w-6" />
               </motion.a>
             </motion.div>
+            <motion.div
+              className="mt-8"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1 }}
+            >
+              <a
+                href="https://portfolioo-eight-livid.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 rounded-lg bg-zinc-600 hover:bg-zinc-700 text-white font-medium transition-all duration-200 transform hover:scale-105"
+              >
+                View New Portfolio
+                <svg
+                  className="w-5 h-5 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </a>
+            </motion.div>
           </motion.div>
         </div>
       </div>

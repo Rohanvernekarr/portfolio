@@ -131,7 +131,7 @@ const Hero = () => {
               transition={{ delay: 1 }}
             >
               <a
-                href="https://portfolioo-eight-livid.vercel.app/"
+                href="https://www.rohanrv.tech/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 rounded-lg bg-zinc-600 hover:bg-zinc-700 text-white font-medium transition-all duration-200 transform hover:scale-105"
